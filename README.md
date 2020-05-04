@@ -1,4 +1,4 @@
--Pour le choix de grille CSS j'ai choisissé de travailler sans grille et j'ai utilisé les medias queries pour faire plus d'éffort en css.
--J'ai séparé les fichiers css pour le menu et le slider pour plus de visibilité
--Les difficultés: j'ai pas de photoshop j'ai utilisé photopea c'est trés pratique
--pour le temps de développement, le section header et slider qui sont pris plus du temps  
+- Pour le choix de grille CSS j'ai choisissé de travailler sans grille et j'ai utilisé les medias queries pour faire plus d'éffort en css.
+- J'ai séparé les fichiers css pour le menu et le slider pour plus de visibilité
+- Les difficultés: j'ai pas de photoshop j'ai utilisé photopea c'est trés pratique
+- pour le temps de développement, le section header et slider qui sont pris plus du temps  
