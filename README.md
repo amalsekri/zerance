@@ -1,5 +1,9 @@
--Le lancement de l'application c'est juste vous lancez le fichier principal index.html
-- Pour le choix de grille CSS j'ai choisissé de travailler sans grille et j'ai utilisé les medias queries pour faire plus d'éffort en css.
-- J'ai séparé les fichiers css pour le menu et le slider pour plus de visibilité
-- Les difficultés: j'ai pas de photoshop j'ai utilisé photopea c'est pas trés pratique
-- pour le temps de développement, le section header et slider qui sont pris plus du temps (environ une demi journée)
+- Pour le lancement de l'application, vous lancez le fichier principal index.html
+
+- Pour le choix de grille CSS j'ai choisi de travailler sans grille et j'ai utilisé les medias queries pour faire plus d'éffort en css.
+
+- J'ai séparé les fichiers css pour le menu et le slider pour plus de visibilité.
+
+- Les difficultés : Je n'ai pas de photoshop j'ai utilisé photopea ce n'est pas trés pratique
+
+- Le temps de développement une demi journée.
