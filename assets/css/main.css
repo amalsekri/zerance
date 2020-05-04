@@ -1,0 +1,387 @@
+@font-face {
+	font-family: "Karla Regular";
+	src: url("../fonts/Karla-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Futura";
+	src: url("../fonts/Futura-Maxi.otf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+* {
+    box-sizing: border-box;
+  }
+
+body {
+	color: #000;
+	background: #fff;
+	font-family: Karla Regular, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	margin: 0 auto;
+	line-height: 1.6;
+}
+
+.header-left img {
+	max-width: 315px;
+}
+
+ul.menu li {
+	margin: 0 28px;
+	font-size: 18px;
+	letter-spacing: 0.4px;
+}
+
+.menu li:last-of-type {
+	margin-right: 0;
+}
+
+ul.menu li a {
+	font-size: 24px;
+	font-family: Futura, sans-serif;
+}
+
+ul.menu li a:hover {
+	color: #ffcd1a;
+	text-decoration: underline;
+}
+
+a {
+	color: initial;
+	text-decoration: none;
+}
+
+.header-left {
+	display: block;
+	width: 25%;
+	float: left;
+}
+
+.header-right {
+	display: block;
+	width: 70%;
+	float: right;
+	margin-top: 63px;
+}
+
+.banner__text {
+	color: #000;
+	margin: auto;
+	text-align: center;
+	position: relative;
+	top: 165px;
+	right: 10%;
+	height: 604px;
+	line-height: 1.6;
+}
+
+.banner__text p {
+	font-size: 1.65rem;
+	font-family: Karla, sans-serif;
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+
+.banner__text h1 {
+	font-size: 4rem;
+	font-family: Futura, sans-serif;
+	margin-top: 0px;
+}
+
+#banner {
+	padding-bottom: 230px;
+}
+
+.banner__text h1::before, .details strong::before {
+	content: '<';
+}
+
+.banner__text h1::after, .details strong::after {
+	content: '/>';
+}
+
+h1 strong, .details strong {
+	background: url("../images/marker.png");
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center 100%;
+	overflow: visible;
+}
+
+/* css  section nos clients*/
+#nos-clients {
+	padding: 7rem 0;
+}
+
+section#nos-clients {
+	background-color: #000;
+	color: #fff;
+	text-align: center;;
+}
+
+#nos-clients h2 {
+	font-family: Karla, sans-serif;
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: 1px;
+	padding: 3rem 0 2rem 0
+}
+
+.clients-lists {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: auto;
+	width: 100%;
+	padding: 0 158px;
+}
+
+.container-header {
+	margin: auto;
+	max-width: 90%;
+	padding: 8px 0;
+}
+
+.client {
+	margin-bottom: 2.85rem;
+}
+
+/*****/
+.banner__position--special {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(calc(-50% - var(- -header-height)/2));
+}
+
+.details strong:hover {
+	font-style: italic;
+}
+
+.titre_items {
+	font-family: karla regular;
+	font-size: 25px;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/************** text defile**********/
+/* le block conteneur */
+.marquee-rtl {
+    background: #ffcd1a;
+    color: #fff;
+    padding: 20px;
+    font-size:37px;
+    font-weight: bold;
+    overflow: hidden;
+    line-height:3rem;
+  }
+/* le bloc défilant */
+.marquee-rtl > :first-child {
+    display: inline-block;               
+    padding-right: 2em;                   
+    padding-left: 100%;                   
+    white-space: nowrap;                  
+    animation: defilement-rtl 15s infinite linear;
+  }
+  @keyframes defilement-rtl {
+    0% {
+      transform: translate3d(0,0,0);      /* position initiale à droite */
+    }
+    100% {
+      transform: translate3d(-100%,0,0);  /* position finale à gauche */
+    }
+  }
+
+
+  @media screen and (min-width:1024px) {
+    .control {
+        right:14%;
+    }
+    .slide img.resp-img {
+        width: 1366px;
+	}
+  }
+  @media screen and (max-width:1024px) {
+
+	.slide img.resp-img {
+		width: 970px;
+    }
+    
+    ul.menu li a {
+        font-size: 18px;
+    }
+    .banner__text{
+        top:70px;
+    }
+    .focus-client__content {
+		width: 60%;
+		height: auto;
+		padding: 0.5rem 0.5rem;
+		right: 35%;
+	}
+	.titre_items {
+        font-size: 16px;
+    }
+    .full-width {
+        max-width: 50%;
+    }
+    .details strong {
+        font-size: 14px;
+        font-family: futura;
+        padding: 5px;
+    }
+    .control{
+        left:90%;
+    }
+    .clients-lists {
+        padding: 0 90px;
+    }
+    #banner {
+        padding-bottom: 85px;
+    }
+    
+  }
+/*****  les media queries****/
+@media screen and (max-width:768px) {
+	.banner__text h1 {
+		font-size: 3rem;
+	}
+	.header-left img {
+		max-width: 200px;
+	}
+	.header-right {
+		margin-top: 0;
+	}
+	.clients-lists {
+		padding: 0;
+	}
+	.client {
+		margin-bottom: 5px;
+		width: 33%;
+	}
+	#banner {
+		padding-bottom: 10px;
+	}
+	#nos-clients {
+		padding: 1rem 0;
+	}
+	.banner__text h1 {
+		font-size: 2rem;
+	}
+	.banner__text {
+        position: inherit;
+        height:400px;
+	}
+	.slide img.resp-img {
+		width: 675px;
+	}
+	.next {
+		right: 20px;
+	}
+	#items {
+		position: relative;
+		top: 0;
+		left: 0;
+    }
+    p {
+		font-size: 0.8rem;
+		margin-bottom: 0.5rem;
+		margin-top: 0rem;
+	}
+	.focus-client__content {
+		width: 50%;
+		height: auto;
+		padding: 0.5rem 0.5rem;
+		right: 14%;
+	}
+	.titre_items {
+        font-size: 16px;
+    }
+    .full-width {
+        max-width: 50%;
+    }
+    .details strong {
+        font-size: 14px;
+        font-family: futura;
+        padding: 5px;
+    }
+    .control{
+        left:80%;
+    }
+}
+
+
+/*****  les media queries****/
+@media screen and (max-width:425px) {
+	.slide img.resp-img {
+		width: 400px;
+	}
+	.next {
+		right: 20px;
+    }
+    p {
+		font-size: 0.8rem;
+		margin-bottom: 0.5rem;
+		margin-top: 0rem;
+	}
+	.focus-client__content {
+		width: 60%;
+		height: 95%;
+		padding: 0.5rem 0.5rem;
+		right: 14%;
+	}
+	.titre_items {
+        font-size: 16px;
+    }
+    .full-width {
+        max-width: 50%;
+    }
+    .details strong {
+        font-size: 14px;
+        font-family: futura;
+        padding: 5px;
+    }
+    .header-right {
+		margin-top: 0;
+	}
+}
+/*********************************************
+*           max ecran de taille 320px
+*********************************************/
+@media screen and (max-width:320px) {
+	.clients-lists {
+		padding: 0 15px;
+	}
+	.slide img.resp-img {
+        width: 300px;
+        height: 250px;
+	}
+	.next {
+		right: 20px;
+	}
+	.focus-client__content {
+        width: 80%;
+        height:auto;
+    }
+    .header-right {
+		margin-top: 0;
+	}
+}
